@@ -1,37 +1,55 @@
-.project{
+.project {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 100px 50px 100px;
+    padding: 20px;
     border-top: 1px solid rgb(201, 201, 201);
     cursor: pointer;
     transition: all 0.2s;
 }
-.project:last-of-type{
+
+@media (min-width: 768px) {
+    .project {
+        padding: 50px 100px;
+    }
+}
+
+.project:last-of-type {
     border-bottom: 1px solid rgb(201, 201, 201);
 }
 
-.project:hover{
+.project:hover {
     opacity: 0.5;
 }
 
-.project:hover h2{
+.project h2 {
+    font-style: italic;
+    font-weight: 200;
+    transition: transform 0.2s;
+}
+
+.project p {
+    font-weight: 200;
+    transition: transform 0.2s;
+}
+
+.project:hover h2 {
     transform: translateX(-10px);
 }
 
-.project:hover p{
+.project:hover p {
     transform: translateX(10px);
 }
 
-.project h2{
+.project h2 {
     font-size: 60px;
     margin: 0px;
     font-weight: 400;
     transition: all 0.4s;
 }
 
-.project p{
+.project p {
     transition: all 0.4s;
     font-weight: 300;
 }
