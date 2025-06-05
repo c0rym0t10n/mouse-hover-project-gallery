@@ -76,7 +76,7 @@ export default function CVPage() {
                         <div className={styles.experienceItem}>
                             <div className={styles.period}>2003 — 2009</div>
                             <div className={styles.details}>
-                                <h3>Bachelor's in Graphic Communication Design at <span className={styles.company}>UAM Azcapotzalco</span></h3>
+                                <h3>Bachelor&apos;s in Graphic Communication Design at <span className={styles.company}>UAM Azcapotzalco</span></h3>
                                 <p className={styles.location}>México</p>
                             </div>
                         </div>
