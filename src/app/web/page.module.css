@@ -1,7 +1,7 @@
 .container {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    background: #CECECE;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,22 +17,54 @@
     z-index: 100;
 }
 
+/* Material Design 3 Back Button - Filled Button */
 .backButton {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-    padding: 12px 24px;
+    /* MD3 Filled Button */
+    background: #1B1716 !important;
+    /* Custom dark color */
+    color: #FFFFFF !important;
+    /* On Primary */
+    padding: 10px 24px;
     text-decoration: none !important;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 20px;
+    /* MD3 rounded corners */
+    font-size: 14px;
     font-weight: 500;
-    transition: all 0.3s ease;
-    border: 2px solid #000000;
-    display: inline-block;
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    min-height: 40px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.2, 0.0, 0, 1.0);
+    position: relative;
+    overflow: hidden;
+    /* MD3 Elevation Level 0 */
+    box-shadow: none;
 }
 
 .backButton:hover {
-    background-color: #333333 !important;
-    color: #ffffff !important;
+    background: #2A2520 !important;
+    /* Lighter shade for hover */
+    /* MD3 Elevation Level 1 */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.backButton:active {
+    background: #141210 !important;
+    /* Darker shade for pressed */
+    /* MD3 Elevation Level 0 */
+    box-shadow: none;
+}
+
+.backButton:focus {
+    outline: none;
+    /* MD3 Focus ring */
+    box-shadow: 0 0 0 3px rgba(27, 23, 22, 0.12);
 }
 
 .title {

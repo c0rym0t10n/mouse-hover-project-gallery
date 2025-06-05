@@ -7,7 +7,7 @@ import Modal from '../components/modal';
 const projects = [{
   title: "reel-2024",
   description: "Motion Design & Video",
-  src: "reel.jpg",
+  src: "cardboard.gif",
   color: "#000000"
 },
 {
@@ -20,12 +20,11 @@ const projects = [{
   description: "Download CV",
   src: "cv.png",
   color: "#FF1E8D"
-},
-{
+}, {
   title: ".contact",
-  description: "Let's Talk",
+  description: "Get in Touch",
   src: "contacto.gif",
-  color: "#706D63"
+  color: "#34C759"
 }
 ]
 

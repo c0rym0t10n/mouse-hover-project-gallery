@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-top: 1px solid rgb(201, 201, 201);
+    border-top: 1px solid white;
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -41,7 +41,7 @@
 }
 
 .project:last-of-type {
-    border-bottom: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid white;
 }
 
 .project:hover {

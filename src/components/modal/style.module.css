@@ -3,6 +3,7 @@
     width: 400px;
     position: absolute;
     background-color: white;
+    border-radius: 8px;
     overflow: hidden;
     pointer-events: none;
     display: flex;

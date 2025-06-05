@@ -1,0 +1,9 @@
+This is a placeholder for the CV PDF file. 
+You should replace this with the actual PDF version of the CV.
+
+To create the actual PDF:
+1. You can use the browser's print function on the CV page
+2. Or create a professional PDF using tools like Adobe Acrobat
+3. Or use online HTML to PDF converters
+
+The file should be named "cv-corymotion.pdf" and placed in the public folder.
