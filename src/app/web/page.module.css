@@ -1,0 +1,456 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.backButtonContainer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.backButton {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    padding: 12px 24px;
+    text-decoration: none !important;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #000000;
+    display: inline-block;
+}
+
+.backButton:hover {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+    z-index: 10;
+}
+
+.title h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.title p {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 200;
+}
+
+.carouselContainer {
+    position: relative;
+    width: 788px;
+    /* 450 * 1.75 */
+    height: 788px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.projectItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 245px;
+    /* 140px * 1.75 = 245px */
+    height: 245px;
+    margin: -122.5px 0 0 -122.5px;
+    /* -245px / 2 */
+    cursor: pointer;
+}
+
+.projectItem:hover {
+    z-index: 5;
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.6s ease 0.2s;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.projectItem:hover .projectImage {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modalContent {
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+    animation: slideUp 0.3s ease-out;
+}
+
+.closeButton {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+    background: #333;
+    transform: scale(1.1);
+}
+
+.projectCard {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.projectImageLarge {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* Hacer la imagen cuadrada */
+    overflow: hidden;
+    position: relative;
+}
+
+.carouselWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carouselWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carouselButton:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prevButton {
+    left: 10px;
+}
+
+.nextButton {
+    right: 10px;
+}
+
+.carouselDots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+}
+
+.activeDot {
+    background: white !important;
+    transform: scale(1.2);
+}
+
+.projectInfo {
+    padding: 15px 30px;
+    /* Reducir padding vertical a la mitad */
+}
+
+.projectInfo h2 {
+    font-size: 1.5rem;
+    /* Reducir tamaño del título */
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+    /* Reducir margen inferior */
+}
+
+.projectDescription {
+    font-size: 0.9rem;
+    /* Reducir tamaño de la descripción */
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    /* Reducir margen inferior */
+}
+
+.projectTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #f0f0f0;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.blurLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter 0.3s ease;
+    z-index: 1;
+}
+
+.blurLayer.active {
+    backdrop-filter: blur(5px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        overflow: hidden;
+        /* Asegurar que nada se salga */
+    }
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+    }
+
+    .carouselContainer {
+        width: 450px;
+        /* Aumentar para acomodar imágenes más grandes */
+        height: 450px;
+        max-width: calc(100vw - 40px);
+        /* Asegurar que no se salga de la pantalla */
+        max-height: calc(100vh - 300px);
+    }
+
+    .projectItem {
+        width: 140px;
+        /* 80px * 1.75 = 140px */
+        height: 140px;
+        margin: -70px 0 0 -70px;
+    }
+
+    .modalContent {
+        width: 95%;
+        max-width: 400px;
+    }
+
+    .projectInfo {
+        padding: 15px 20px;
+        /* Ajustar padding */
+    }
+
+    .projectInfo h2 {
+        font-size: 1.3rem;
+    }
+
+    .projectDescription {
+        font-size: 0.85rem;
+    }
+
+    .carouselButton {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .prevButton {
+        left: 8px;
+    }
+
+    .nextButton {
+        right: 8px;
+    }
+
+    .carouselDots {
+        bottom: 12px;
+        gap: 6px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .carouselContainer {
+        width: 350px;
+        /* Aumentar para acomodar imágenes más grandes */
+        height: 350px;
+        max-width: calc(100vw - 20px);
+    }
+
+    .projectItem {
+        width: 105px;
+        /* 60px * 1.75 = 105px */
+        height: 105px;
+        margin: -52.5px 0 0 -52.5px;
+    }
+
+    .backButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .carouselButton {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .prevButton {
+        left: 6px;
+    }
+
+    .nextButton {
+        right: 6px;
+    }
+
+    .carouselDots {
+        bottom: 10px;
+        gap: 5px;
+    }
+
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
+}

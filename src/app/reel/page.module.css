@@ -1,0 +1,86 @@
+/* src/app/reel/page.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    /* White background */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    /* For absolute positioning of back button */
+    width: 100%;
+}
+
+.backButtonContainer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.backButton {
+    background-color: #000000 !important;
+    /* Black background */
+    color: #ffffff !important;
+    /* White text */
+    padding: 12px 24px;
+    text-decoration: none !important;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0.5;
+    /* Reduce line height to half */
+    transition: all 0.3s ease;
+    border: 2px solid #000000;
+    display: inline-block;
+}
+
+.backButton:hover {
+    background-color: #333333 !important;
+    /* Dark gray background on hover */
+    color: #ffffff !important;
+    /* White text on hover */
+}
+
+.videoContainer {
+    width: 90%;
+    /* Default width */
+    max-width: 1280px;
+    /* Max width for desktop */
+    aspect-ratio: 16 / 9;
+    /* Maintain aspect ratio */
+    background-color: #000;
+    /* Black background for the iframe container */
+    border-radius: 16px;
+    /* Rounded corners - 16px */
+    overflow: hidden;
+    /* Ensure iframe respects border radius */
+}
+
+.videoIframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* Ensure no default border from iframe */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .videoContainer {
+        width: 100%;
+        /* Full width on mobile */
+    }
+
+    .backButtonContainer {
+        top: 15px;
+        left: 15px;
+    }    .backButton {
+        padding: 8px 15px;
+        font-size: 14px;
+        line-height: 0.5;
+        /* Reduce line height to half on mobile too */
+    }
+}

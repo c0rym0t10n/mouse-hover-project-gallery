@@ -15,6 +15,31 @@
     }
 }
 
+/* Mobile adjustments for better readability */
+@media (max-width: 768px) {
+    .project h2 {
+        line-height: 1.0;
+        font-size: 40px;
+    }
+
+    .project p {
+        line-height: 1.2;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project h2 {
+        line-height: 1.1;
+        font-size: 32px;
+    }
+
+    .project p {
+        line-height: 1.3;
+        font-size: 13px;
+    }
+}
+
 .project:last-of-type {
     border-bottom: 1px solid rgb(201, 201, 201);
 }
@@ -26,11 +51,14 @@
 .project h2 {
     font-style: italic;
     font-weight: 200;
+    line-height: 0.8;
     transition: transform 0.2s;
 }
 
 .project p {
     font-weight: 200;
+    line-height: 0.8;
+    text-align: right;
     transition: transform 0.2s;
 }
 
@@ -46,10 +74,13 @@
     font-size: 60px;
     margin: 0px;
     font-weight: 400;
+    line-height: 0.8;
     transition: all 0.4s;
 }
 
 .project p {
     transition: all 0.4s;
     font-weight: 300;
+    line-height: 0.8;
+    text-align: right;
 }

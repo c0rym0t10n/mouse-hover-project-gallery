@@ -1,13 +1,30 @@
 'use client';
 import React from 'react'
 import styles from './style.module.css';
+import Link from 'next/link';
 
 export default function index({ index, title, description, setModal }) {
 
+    const isReel = title === "reel-2024";
+    const isWeb = title === ".web";
+
     return (
-        <div onMouseEnter={() => { setModal({ active: true, index }) }} onMouseLeave={() => { setModal({ active: false, index }) }} className={styles.project}>
-            <h2>{title}</h2>
-            <p>{description}</p>
+        <div onMouseEnter={() => { setModal({ active: true, index: index }) }} onMouseLeave={() => { setModal({ active: false, index: index }) }} className={styles.project}>
+            {isReel ? (
+                <Link href="/reel" legacyBehavior>
+                    <a>
+                        <h2>{title}</h2>
+                    </a>
+                </Link>
+            ) : isWeb ? (
+                <Link href="/web" legacyBehavior>
+                    <a>
+                        <h2>{title}</h2>
+                    </a>
+                </Link>
+            ) : (
+                <h2>{title}</h2>
+            )}            <p>{description}</p>
         </div>
     )
 }
