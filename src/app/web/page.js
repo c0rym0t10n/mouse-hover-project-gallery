@@ -6,39 +6,80 @@ import styles from './page.module.css';
 const webProjects = [
     {
         id: 1,
-        title: "E-commerce Platform",
-        description: "Modern e-commerce solution with seamless user experience",
-        tags: ["React", "Node.js", "MongoDB"],
-        image: "/images/character02.gif",
-        images: ["/images/character02.gif", "/images/body.jpg", "/images/face.jpg"],
-        color: "#00b2ff"
+        title: "Humo Santo",
+        description: "Los amigos de Humo Santo me invitaron a colaborar en la creación de imágenes para su landing page y redes sociales. Esta propuesta inicial busca establecer una nueva línea de comunicación visual: fresca, colorida y con mucha actitud. ¡Ahuevo, viejón!",
+        tags: ["blender", "cycles", "3D", "product"],
+        image: "/projects-web/humo-santo_02.webp",
+        images: ["/projects-web/humo-santo_02.webp"],
+        color: "#FF6B35",
+        type: "image",
+        ratio: "square"
     },
     {
         id: 2,
-        title: "Brand Identity System",
-        description: "Complete visual identity for tech startup",
-        tags: ["Branding", "UI/UX", "Design System"],
-        image: "/images/officestudio.png",
-        images: ["/images/officestudio.png", "/images/portrait.jpg", "/images/breeathe.jpg"],
-        color: "#FF1E8D"
+        title: "Wellness App",
+        description: "Desarrollé una red social interna para un cliente, centrada en el bienestar. La app incluía contenido exclusivo y retos semanales para los usuarios. También diseñé el splash screen y la pantalla de inicio de sesión, partiendo desde Figma hasta su implementación final.",
+        tags: ["HTML", "app", "webapp", "UX/UI", "figma"],
+        image: "/projects-web/wellness-app_012.png",
+        images: ["/projects-web/wellness-app_012.png", "/projects-web/wellness-app_013.mp4"],
+        color: "#00D4AA",
+        type: "mixed",
+        ratio: "portrait"
     },
     {
         id: 3,
-        title: "Mobile App Interface",
-        description: "Intuitive mobile experience for wellness app",
-        tags: ["Mobile", "React Native", "Figma"],
-        image: "/images/silencio.png",
-        images: ["/images/silencio.png", "/images/cv.png", "/images/reel.jpg"],
-        color: "#CCFF00"
+        title: "Sin Mujeres No Hay Democracia",
+        description: "En 2023 colaboré con el INE y INMUJERES para producir una animación conmemorativa y de concientización sobre la importancia del papel de las mujeres en la democracia. Un proyecto breve pero poderoso, con gran impacto social.",
+        tags: ["motion design", "3D", "blender", "after effects"],
+        image: "/projects-web/ine-mujeres_010.mp4",
+        images: ["/projects-web/ine-mujeres_010.mp4", "/projects-web/ine-mujeres_011.mp4", "/projects-web/ine-mujeres_07.mp4", "/projects-web/ine-mujeres_09.m4v"],
+        color: "#8B5CF6",
+        type: "video",
+        ratio: "landscape"
     },
     {
         id: 4,
-        title: "Portfolio Website",
-        description: "Creative portfolio showcasing artistic work",
-        tags: ["Next.js", "GSAP", "Creative"],
-        image: "/images/contacto.gif",
-        images: ["/images/contacto.gif", "/images/character02.gif", "/images/face.jpg"],
-        color: "#706D63"
+        title: "Verbena",
+        description: "Realicé una serie de renders para la marca Verbena, cuidando cada detalle para destacar la estética de sus productos. Fue un ejercicio de dirección de arte digital en el que combiné iluminación, materiales y composición para generar imágenes atractivas y funcionales.",
+        tags: ["blender", "cycles", "3D", "product"],
+        image: "/projects-web/verbena_02.webp",
+        images: ["/projects-web/verbena_02.webp", "/projects-web/verbena_03.webp"],
+        color: "#F59E0B",
+        type: "image",
+        ratio: "square"
+    },
+    {
+        id: 5,
+        title: "Error Page / Splash Screen",
+        description: "Estas piezas forman parte de mis proyectos personales, en donde experimento con diseño UI/UX y animación en Figma. El objetivo es probar nuevas ideas y mejorar continuamente mis habilidades visuales y narrativas.",
+        tags: ["HTML", "motion", "Rive", "after effects", "figma"],
+        image: "/projects-web/error-page_01.mp4",
+        images: ["/projects-web/error-page_01.mp4"],
+        color: "#EF4444",
+        type: "video",
+        ratio: "landscape"
+    },
+    {
+        id: 6,
+        title: "Crocs Out-of-Home VFX",
+        description: "Desarrollé una serie de piezas animadas estilo CGI Ad, integrando productos de Crocs en espacios públicos populares mediante composición 3D y motion tracking. Inspiradas en la tendencia de product drops digitales.",
+        tags: ["CGI", "VFX", "product drop", "3D", "motion tracking", "guerrilla marketing"],
+        image: "/projects-web/crocs_014.mp4",
+        images: ["/projects-web/crocs_014.mp4"],
+        color: "#10B981",
+        type: "video",
+        ratio: "landscape"
+    },
+    {
+        id: 7,
+        title: "Hope",
+        description: "Proyecto personal de exploración visual centrado en el desarrollo de branding y splash screen para una app conceptual llamada Hope. El diseño fue realizado íntegramente en Figma, enfocándome en transmitir calma, claridad y propósito.",
+        tags: ["figma", "branding", "UI", "splash", "concept design"],
+        image: "/projects-web/hope_018.jpg",
+        images: ["/projects-web/hope_018.jpg", "/projects-web/hope_019.jpg"],
+        color: "#6366F1",
+        type: "image",
+        ratio: "portrait"
     }
 ];
 
@@ -127,9 +168,7 @@ export default function WebPage() {
                 // Debug: mostrar valores en consola
                 if (index === 0) {
                     console.log('Rotation:', rotation, 'Angle:', currentAngle, 'X:', x, 'Y:', y);
-                }
-
-                return (
+                }                return (
                     <div
                         key={project.id}
                         className={styles.projectItem}
@@ -138,9 +177,38 @@ export default function WebPage() {
                             transition: 'none' // Quitar transición para movimiento suave
                         }}
                         onClick={() => handleProjectClick(project)}
-                    >
-                        <div className={styles.projectImage}>
-                            <img src={project.image} alt={project.title} />
+                    ><div className={styles.projectImage}>
+                            {project.image.endsWith('.mp4') || project.image.endsWith('.m4v') ? (
+                                <video 
+                                    src={project.image} 
+                                    alt={project.title}
+                                    autoPlay 
+                                    loop 
+                                    muted 
+                                    playsInline
+                                />
+                            ) : (
+                                <img src={project.image} alt={project.title} />
+                            )}
+                        </div>
+                        <div className={styles.projectMiniInfo}>
+                            <h3 className={styles.projectMiniTitle}>{project.title}</h3>
+                            <div className={styles.projectMiniTags}>
+                                {project.tags.slice(0, 2).map((tag, tagIndex) => (
+                                    <span 
+                                        key={tagIndex} 
+                                        className={styles.miniTag}
+                                        style={{ backgroundColor: project.color }}
+                                    >
+                                        {tag}
+                                    </span>
+                                ))}
+                                {project.tags.length > 2 && (
+                                    <span className={styles.miniTagMore}>
+                                        +{project.tags.length - 2}
+                                    </span>
+                                )}
+                            </div>
                         </div>
                     </div>
                 );
@@ -152,13 +220,30 @@ export default function WebPage() {
                         <button className={styles.closeButton} onClick={closeModal}>
                             ×
                         </button>
-                        <div className={styles.projectCard}>
-                            <div className={styles.projectImageLarge}>
-                                <div className={styles.carouselWrapper}>
-                                    <img
-                                        src={selectedProject.images[currentImageIndex]}
-                                        alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
-                                    />
+                        <div className={styles.projectCard}>                            <div className={`${styles.projectImageLarge} ${styles[`modal-${selectedProject.ratio}`]}`}>
+                                <div className={`${styles.carouselWrapper} ${selectedProject.title === "Wellness App" ? styles.wellnessScroll : ""}`}>
+                                    {selectedProject.images[currentImageIndex].endsWith('.mp4') || 
+                                     selectedProject.images[currentImageIndex].endsWith('.m4v') ? (
+                                        <video
+                                            src={selectedProject.images[currentImageIndex]}
+                                            alt={`${selectedProject.title} - Video ${currentImageIndex + 1}`}
+                                            autoPlay 
+                                            loop 
+                                            muted 
+                                            playsInline
+                                            controls={selectedProject.title === "Wellness App"}
+                                            style={{
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover'
+                                            }}
+                                        />
+                                    ) : (
+                                        <img
+                                            src={selectedProject.images[currentImageIndex]}
+                                            alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
+                                        />
+                                    )}
 
                                     {selectedProject.images.length > 1 && (
                                         <>

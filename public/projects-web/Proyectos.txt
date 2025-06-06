@@ -1,0 +1,36 @@
+Proyectos
+1. Humo Santo
+Los amigos de Humo Santo me invitaron a colaborar en la creación de imágenes para su landing page y redes sociales. Esta propuesta inicial busca establecer una nueva línea de comunicación visual: fresca, colorida y con mucha actitud. ¡Ahuevo, viejón!
+Tags: blender, cycles, 3D, product
+
+2. Wellness App 
+Desarrollé una red social interna para un cliente, centrada en el bienestar. La app incluía contenido exclusivo y retos semanales para los usuarios.
+También diseñé el splash screen y la pantalla de inicio de sesión, partiendo desde Figma hasta su implementación final. Algunas animaciones fueron integradas utilizando JSON y Rive para lograr una experiencia fluida e interactiva.
+Tags: HTML, app, webapp, UX/UI, figma
+
+3. SIN MUJERES NO HAY DEMOCRACIA 
+En 2023 colaboré con el INE y INMUJERES para producir una animación conmemorativa y de concientización sobre la importancia del papel de las mujeres en la democracia. Un proyecto breve pero poderoso, con gran impacto social.
+Tags: motion design, 3D, blender, after effects
+
+4. Verbena 
+Realicé una serie de renders para la marca Verbena, cuidando cada detalle para destacar la estética de sus productos. Fue un ejercicio de dirección de arte digital en el que combiné iluminación, materiales y composición para generar imágenes atractivas y funcionales para su comunicación visual.
+Tags: blender, cycles, 3D, product
+
+5. Voces sin género 
+Tuve el gusto de colaborar con mi amigo Gustavo Grados en esta pieza para promover la igualdad de género en la pantalla del Canal 14, dentro de la televisión pública de México.
+En un país donde la violencia hacia la mujer persiste, es fundamental visibilizar el mensaje de equidad y desdibujar esta brecha absurda.
+El amor y el respeto siempre es el camino.
+Tags: motion, design, OctaneRender, C4D, Substance Painter
+
+6. Pantalla de error / Splash Screen 
+Estas piezas forman parte de mis proyectos personales, en donde experimento con diseño UI/UX y animación en Figma. El objetivo es probar nuevas ideas y mejorar continuamente mis habilidades visuales y narrativas.
+Tags: HTML, motion, Rive, after effects, figma
+
+7. Crocs Out-of-Home VFX
+Desarrollé una serie de piezas animadas estilo CGI Ad, integrando productos de Crocs en espacios públicos populares mediante composición 3D y motion tracking. Inspiradas en la tendencia de product drops digitales, estas animaciones simulan la presencia física del producto en entornos reales, generando impacto visual y viralidad en redes sociales.
+Tags: CGI, VFX, product drop, 3D, motion tracking, guerrilla marketing, viral content, visual trick
+
+8. Hope 
+Proyecto personal de exploración visual centrado en el desarrollo de branding y splash screen para una app conceptual llamada Hope.
+El diseño fue realizado íntegramente en Figma, enfocándome en transmitir calma, claridad y propósito mediante tipografía, color y movimiento. Una propuesta ligera pero con intención emocional.
+Tags: figma, branding, UI, splash, concept design
