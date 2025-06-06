@@ -1,10 +1,11 @@
 /* Contact page styles */
 .container {
-    background-color: #CECECE;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     min-height: 100vh;
     padding: 20px;
     font-family: 'Roboto', system-ui, -apple-system, sans-serif;
     position: relative;
+    overflow-x: hidden;
 }
 
 .backButtonContainer {
@@ -86,76 +87,141 @@
 
 .contactGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
     width: 100%;
+    max-width: 900px;
 }
 
 .contactItem {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 24px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 16px;
+    gap: 24px;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.2, 0.0, 0, 1.0);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.2, 0.0, 0, 1.0);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
     position: relative;
+    overflow: visible;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .contactItem:hover {
-    transform: translateY(-2px);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15), 0px 8px 16px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.15), 0px 2px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 1);
+}
+
+.contactItem:hover .iconContainer {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .iconContainer {
-    width: 64px;
-    height: 64px;
+    width: 120px;
+    height: 120px;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.2, 0.0, 0, 1.0);
+    margin-left: -20px;
+    z-index: 2;
 }
 
 .icon {
-    width: 48px;
-    height: 48px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
+    transition: all 0.4s ease;
 }
 
 .contactInfo {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
     flex: 1;
+    padding-left: 12px;
 }
 
 .platform {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #000;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a1a;
     margin: 0;
+    letter-spacing: -0.02em;
 }
 
 .username {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #666;
     margin: 0;
+    font-weight: 500;
 }
 
 .externalIcon {
-    font-size: 1.2rem;
-    color: #666;
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
+    font-size: 1.5rem;
+    color: #4285f4;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 .contactItem:hover .externalIcon {
     opacity: 1;
+    transform: translate(2px, -2px);
+}
+
+/* Efectos adicionales y animaciones */
+@keyframes floatIcon {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(2deg);
+    }
+}
+
+.iconContainer:hover {
+    animation: floatIcon 2s ease-in-out infinite;
+}
+
+/* Efecto de brillo sutil en las tarjetas */
+.contactItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    border-radius: 24px;
+    pointer-events: none;
+}
+
+.contactItem:hover::before {
+    opacity: 1;
+    animation: shimmer 1.5s ease-in-out;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 /* Mobile adjustments */
@@ -166,11 +232,32 @@
 
     .contactGrid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 24px;
+        max-width: 100%;
     }
 
     .contactItem {
-        padding: 20px;
+        padding: 24px 20px;
+        gap: 20px;
+    }
+
+    .iconContainer {
+        width: 100px;
+        height: 100px;
+        margin-left: -15px;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .platform {
+        font-size: 1.2rem;
+    }
+
+    .username {
+        font-size: 0.95rem;
     }
 
     .backButtonContainer {
@@ -188,5 +275,24 @@
     .content {
         margin-top: 80px;
         padding: 0 16px;
+    }
+}
+
+/* Efecto de escalado suave en pantallas pequeñas */
+@media (max-width: 480px) {
+    .contactItem:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+
+    .iconContainer {
+        width: 90px;
+        height: 90px;
+        margin-left: -10px;
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
     }
 }

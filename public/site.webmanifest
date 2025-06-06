@@ -1,0 +1,22 @@
+{
+    "name": "CoryMotion - Creative Portfolio",
+    "short_name": "CoryMotion",
+    "description": "Creative portfolio showcasing motion design, web development, and visual arts",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1B1716",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
