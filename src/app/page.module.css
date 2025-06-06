@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    position: relative;
 }
 
 .body {
@@ -13,4 +14,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+/* Fixed overlay smile sticker - anclado al contenedor .body */
+.stickerOverlay {
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% - 500px);
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    pointer-events: none;
+}
+
+.smileSticker {
+    width: 200px;
+    height: 200px;
+    opacity: 0.9;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stickerOverlay {
+        top: calc(50% - 300px);
+        left: calc(50% - 500px);
+        transform: translate(-50%, -50%);
+    }
+    
+    .smileSticker {
+        width: 75px;
+        height: 75px;
+    }
 }

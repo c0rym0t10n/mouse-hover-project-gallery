@@ -31,9 +31,18 @@ const projects = [{
 export default function Home() {
 
   const [modal, setModal] = useState({ active: false, index: 0 })
-
   return (
-    <main className={styles.main}>      <div className={styles.body}>
+    <main className={styles.main}>
+      {/* Fixed overlay smile sticker */}
+      <div className={styles.stickerOverlay}>
+        <img 
+          src="/icons/sticker.png" 
+          alt="Smile sticker" 
+          className={styles.smileSticker}
+        />
+      </div>
+      
+      <div className={styles.body}>
       {
         projects.map((project, index) => {
           return <Project

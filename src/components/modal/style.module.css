@@ -42,7 +42,7 @@
     background-color: #455CE9;
     color: white;
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
