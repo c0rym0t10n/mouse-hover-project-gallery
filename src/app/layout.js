@@ -13,16 +13,16 @@ export const metadata = {
   description: 'Creative portfolio showcasing motion design, web development, and visual arts by Cory Motion',
   keywords: 'motion design, portfolio, creative, web development, visual arts, animation',
   authors: [{ name: 'Cory Motion' }],
-  creator: 'Cory Motion',  openGraph: {
+  creator: 'Cory Motion', openGraph: {
     title: 'CoryMotion',
     description: 'Creative portfolio showcasing motion design, web development, and visual arts',
     type: 'website',
     locale: 'en_US',
-  },  twitter: {
+  }, twitter: {
     card: 'summary_large_image',
     title: 'CoryMotion',
     description: 'Creative portfolio showcasing motion design, web development, and visual arts',
-  },  icons: {
+  }, icons: {
     icon: [
       { url: '/favicon.ico?v=2', sizes: 'any' },
       { url: '/favicon-16x16.png?v=2', sizes: '16x16', type: 'image/png' },
