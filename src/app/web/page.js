@@ -9,8 +9,13 @@ const webProjects = [
         title: "Humo Santo",
         description: "Los amigos de Humo Santo me invitaron a colaborar en la creación de imágenes para su landing page y redes sociales. Esta propuesta inicial busca establecer una nueva línea de comunicación visual: fresca, colorida y con mucha actitud. ¡Ahuevo, viejón!",
         tags: ["blender", "cycles", "3D", "product"],
-        image: "/projects-web/humo-santo_02.webp",
-        images: ["/projects-web/humo-santo_02.webp"],
+        image: "/projects-web/humo santo/original-593ebcc27bea54ece9dabbc7c9e5ac4d.webp",
+        images: [
+            "/projects-web/humo santo/original-593ebcc27bea54ece9dabbc7c9e5ac4d.webp",
+            "/projects-web/humo santo/original-547e1c17955832dc26ffb5e6c077ccee.webp",
+            "/projects-web/humo santo/original-5fa92d16d8af18d791012267c0ab9fd2.webp",
+            "/projects-web/humo santo/original-ecd7bb5e33c54414454155477738d7c9.webp"
+        ],
         color: "#FF6B35",
         type: "image",
         ratio: "square"
@@ -20,8 +25,12 @@ const webProjects = [
         title: "Wellness App",
         description: "Desarrollé una red social interna para un cliente, centrada en el bienestar. La app incluía contenido exclusivo y retos semanales para los usuarios. También diseñé el splash screen y la pantalla de inicio de sesión, partiendo desde Figma hasta su implementación final.",
         tags: ["HTML", "app", "webapp", "UX/UI", "figma"],
-        image: "/projects-web/wellness-app_012.png",
-        images: ["/projects-web/wellness-app_012.png", "/projects-web/wellness-app_013.mp4"],
+        image: "/projects-web/wellnes app/original-f3fa8e9597333e6e52060a4a0abc90ab.webp",
+        images: [
+            "/projects-web/wellnes app/original-f3fa8e9597333e6e52060a4a0abc90ab.webp",
+            "/projects-web/wellnes app/original-8bb9966db6894f8d490af014ed21f15b.mp4",
+            "/projects-web/wellnes app/original-d809ba5be7118696efa0d7b09983e866.webp"
+        ],
         color: "#00D4AA",
         type: "mixed",
         ratio: "portrait"
@@ -31,8 +40,8 @@ const webProjects = [
         title: "Sin Mujeres No Hay Democracia",
         description: "En 2023 colaboré con el INE y INMUJERES para producir una animación conmemorativa y de concientización sobre la importancia del papel de las mujeres en la democracia. Un proyecto breve pero poderoso, con gran impacto social.",
         tags: ["motion design", "3D", "blender", "after effects"],
-        image: "/projects-web/ine-mujeres_010.mp4",
-        images: ["/projects-web/ine-mujeres_010.mp4", "/projects-web/ine-mujeres_011.mp4", "/projects-web/ine-mujeres_07.mp4", "/projects-web/ine-mujeres_09.m4v"],
+        image: "/projects-web/INE--mujeres/original-1392a4cd881b8ba3d9785ee16185a96d.m4v",
+        images: ["/projects-web/INE--mujeres/original-1392a4cd881b8ba3d9785ee16185a96d.m4v"],
         color: "#8B5CF6",
         type: "video",
         ratio: "landscape"
@@ -42,8 +51,8 @@ const webProjects = [
         title: "Verbena",
         description: "Realicé una serie de renders para la marca Verbena, cuidando cada detalle para destacar la estética de sus productos. Fue un ejercicio de dirección de arte digital en el que combiné iluminación, materiales y composición para generar imágenes atractivas y funcionales.",
         tags: ["blender", "cycles", "3D", "product"],
-        image: "/projects-web/verbena_02.webp",
-        images: ["/projects-web/verbena_02.webp", "/projects-web/verbena_03.webp"],
+        image: "/projects-web/verbena/N4RpYNQ7IPFkWt4A-product.png",
+        images: ["/projects-web/verbena/N4RpYNQ7IPFkWt4A-product.png"],
         color: "#F59E0B",
         type: "image",
         ratio: "square"
@@ -53,8 +62,8 @@ const webProjects = [
         title: "Error Page / Splash Screen",
         description: "Estas piezas forman parte de mis proyectos personales, en donde experimento con diseño UI/UX y animación en Figma. El objetivo es probar nuevas ideas y mejorar continuamente mis habilidades visuales y narrativas.",
         tags: ["HTML", "motion", "Rive", "after effects", "figma"],
-        image: "/projects-web/error-page_01.mp4",
-        images: ["/projects-web/error-page_01.mp4"],
+        image: "/projects-web/error page/original-da86a7f441077b826355b826f6175e72.mp4",
+        images: ["/projects-web/error page/original-da86a7f441077b826355b826f6175e72.mp4"],
         color: "#EF4444",
         type: "video",
         ratio: "landscape"
@@ -64,8 +73,11 @@ const webProjects = [
         title: "Crocs Out-of-Home VFX",
         description: "Desarrollé una serie de piezas animadas estilo CGI Ad, integrando productos de Crocs en espacios públicos populares mediante composición 3D y motion tracking. Inspiradas en la tendencia de product drops digitales.",
         tags: ["CGI", "VFX", "product drop", "3D", "motion tracking", "guerrilla marketing"],
-        image: "/projects-web/crocs_014.mp4",
-        images: ["/projects-web/crocs_014.mp4"],
+        image: "/projects-web/crocs/users_clr8cq4c2073oor01t4h4fgh8_1ez0N1PFelHHOg4j-crocs.mp4",
+        images: [
+            "/projects-web/crocs/users_clr8cq4c2073oor01t4h4fgh8_1ez0N1PFelHHOg4j-crocs.mp4",
+            "/projects-web/crocs/users_clr8cq4c2073oor01t4h4fgh8_bEjcCs2yehwAXKan-CU_2.mp4"
+        ],
         color: "#10B981",
         type: "video",
         ratio: "landscape"
@@ -75,11 +87,53 @@ const webProjects = [
         title: "Hope",
         description: "Proyecto personal de exploración visual centrado en el desarrollo de branding y splash screen para una app conceptual llamada Hope. El diseño fue realizado íntegramente en Figma, enfocándome en transmitir calma, claridad y propósito.",
         tags: ["figma", "branding", "UI", "splash", "concept design"],
-        image: "/projects-web/hope_018.jpg",
-        images: ["/projects-web/hope_018.jpg", "/projects-web/hope_019.jpg"],
+        image: "/projects-web/hope/original-5b06b9cc979f3b58f83b7f729de540b9.mp4",
+        images: ["/projects-web/hope/original-5b06b9cc979f3b58f83b7f729de540b9.mp4"],
         color: "#6366F1",
-        type: "image",
+        type: "video",
         ratio: "portrait"
+    },    {
+        id: 8,
+        title: "Blender VFX",
+        description: "Efectos especiales y animaciones 3D creados en Blender. Incluye simulaciones de granadas, explosiones y efectos de partículas con técnicas avanzadas de motion graphics y VFX.",
+        tags: ["blender", "VFX", "motion graphics", "3D", "explosions", "particles"],
+        image: "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_A3LYyYhJ1HLUCNHf-grenade.mp4",
+        images: [
+            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_A3LYyYhJ1HLUCNHf-grenade.mp4",
+            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_rVa64FA3seWCGFTw-pre%202.mp4",
+            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_1pV9kqB4C04xGH4i-cardboard.mp4"
+        ],
+        color: "#F97316",
+        type: "video",
+        ratio: "landscape"
+    },
+    {
+        id: 9,
+        title: "3D Product Design",
+        description: "Visualizaciones de productos 3D y estudios de composición digital. Proyectos que combinan modelado, iluminación y rendering para crear imágenes impactantes de productos conceptuales.",
+        tags: ["blender", "product design", "3D", "rendering", "visualization"],
+        image: "/projects-web/blender/Vs0sAF39LXIfYXyc-jynx_bomb.jpg",
+        images: [
+            "/projects-web/blender/Vs0sAF39LXIfYXyc-jynx_bomb.jpg",
+            "/projects-web/blender/oLuOFtW4FOQQRSuS-bomb.jpg"
+        ],
+        color: "#DC2626",
+        type: "image",
+        ratio: "square"
+    },
+    {
+        id: 10,
+        title: "Motion Graphics Lab",
+        description: "Laboratorio de motion graphics donde experimento con animaciones, transiciones y efectos visuales. Incluye trabajos de composición y post-producción usando técnicas mixtas.",
+        tags: ["motion graphics", "compositing", "after effects", "blender", "experimental"],
+        image: "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_BvaaXL2AHtJQ2Tjk-pc_low.mp4",
+        images: [
+            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_BvaaXL2AHtJQ2Tjk-pc_low.mp4",
+            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_dOIaYxIKVjJpJfDq-loreal02.mp4"
+        ],
+        color: "#7C3AED",
+        type: "video",
+        ratio: "landscape"
     }
 ];
 
