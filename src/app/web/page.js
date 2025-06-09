@@ -87,7 +87,7 @@ const webProjects = [
         color: "#6366F1",
         type: "mixed",
         ratio: "portrait"
-    },    {
+    }, {
         id: 8,
         title: "Blender VFX",
         description: "Efectos especiales y animaciones 3D creados en Blender. Incluye simulaciones de granadas, explosiones y efectos de partículas con técnicas avanzadas de motion graphics y VFX.",
@@ -249,11 +249,10 @@ export default function WebPage() {
                             ×
                         </button>
                         <div className={styles.projectCard}>                            <div className={`${styles.projectImageLarge} ${styles[`modal-${selectedProject.ratio}`]}`}>
-                            <div className={`${styles.carouselWrapper} ${
-                                selectedProject.title === "Wellness App" && 
-                                selectedProject.images[currentImageIndex].endsWith('.webp') 
+                            <div className={`${styles.carouselWrapper} ${selectedProject.title === "Wellness App" &&
+                                    selectedProject.images[currentImageIndex].endsWith('.webp')
                                     ? styles.wellnessScroll : ""
-                            }`}>                                {selectedProject.images[currentImageIndex].endsWith('.mp4') ||
+                                }`}>                                {selectedProject.images[currentImageIndex].endsWith('.mp4') ||
                                     selectedProject.images[currentImageIndex].endsWith('.m4v') ? (
                                     <video
                                         src={selectedProject.images[currentImageIndex]}
@@ -262,7 +261,7 @@ export default function WebPage() {
                                         loop
                                         muted
                                         playsInline
-                                        controls={selectedProject.title === "Wellness App"}                                        style={{
+                                        controls={selectedProject.title === "Wellness App"} style={{
                                             width: '100%',
                                             height: '100%',
                                             objectFit: 'contain'
