@@ -68,6 +68,7 @@
 }
 
 .title {
+    position: relative;
     text-align: center;
     margin-bottom: 60px;
     z-index: 10;
@@ -85,6 +86,43 @@
     font-size: 1.2rem;
     color: #666;
     font-weight: 200;
+}
+
+.appsBackground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/apps.png');
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.appsImageContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.appsImage {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    filter: grayscale(0.3);
+    transition: all 0.3s ease;
+}
+
+.appsImage:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .carouselContainer {
@@ -110,8 +148,10 @@
     left: 50%;
     width: 245px;
     /* 140px * 1.75 = 245px */
-    height: auto; /* Change to auto for flexible height */
-    margin-left: -122.5px; /* Only center horizontally */
+    height: auto;
+    /* Change to auto for flexible height */
+    margin-left: -122.5px;
+    /* Only center horizontally */
     cursor: pointer;
     transform-origin: center;
 }
@@ -122,12 +162,14 @@
 
 .projectImage {
     width: 100%;
-    height: 245px; /* Fixed height for ALL carousel cards - uniform size */
+    height: 245px;
+    /* Fixed height for ALL carousel cards - uniform size */
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     transition: all 0.6s ease 0.2s;
-    margin-bottom: 8px; /* Space for mini info */
+    margin-bottom: 8px;
+    /* Space for mini info */
 }
 
 /* Remove adaptive ratios for carousel thumbnails - keep them uniform */
@@ -151,7 +193,8 @@
     opacity: 0;
     transform: translateY(10px);
     transition: all 0.3s ease;
-    min-height: 40px; /* Ensure consistent spacing */
+    min-height: 40px;
+    /* Ensure consistent spacing */
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 12px;
@@ -173,7 +216,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px; /* Limit title width */
+    max-width: 200px;
+    /* Limit title width */
 }
 
 .projectMiniTags {
@@ -258,22 +302,31 @@
 
 .projectImageLarge {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Default square ratio */
+    aspect-ratio: 1 / 1;
+    /* Default square ratio */
     overflow: hidden;
     position: relative;
 }
 
 /* Adaptive ratios for modal */
 .projectImageLarge.modal-landscape {
-    aspect-ratio: 16 / 9; /* Landscape ratio */
+    aspect-ratio: 16 / 9;
+    /* Landscape ratio */
 }
 
 .projectImageLarge.modal-portrait {
-    aspect-ratio: 3 / 4; /* Portrait ratio */
+    aspect-ratio: 3 / 4;
+    /* Portrait ratio */
 }
 
 .projectImageLarge.modal-square {
-    aspect-ratio: 1 / 1; /* Square ratio */
+    aspect-ratio: 1 / 1;
+    /* Square ratio */
+}
+
+.projectImageLarge.modal-vertical {
+    aspect-ratio: 9 / 16;
+    /* Vertical ratio for videos like Crocs */
 }
 
 .carouselWrapper {
@@ -460,6 +513,10 @@
         font-size: 1rem;
     }
 
+    .appsImage {
+        width: 150px;
+    }
+
     .carouselContainer {
         width: 450px;
         /* Aumentar para acomodar imágenes más grandes */
@@ -472,11 +529,17 @@
     .projectItem {
         width: 140px;
         /* 80px * 1.75 = 140px */
-        margin-left: -70px; /* Only center horizontally */
-    }    .projectImage {
-        height: 140px; /* Fixed uniform height for mobile thumbnails */
+        margin-left: -70px;
+        /* Only center horizontally */
+    }
+
+    .projectImage {
+        height: 140px;
+        /* Fixed uniform height for mobile thumbnails */
         margin-bottom: 6px;
-    }.projectMiniTitle {
+    }
+
+    .projectMiniTitle {
         font-size: 0.65rem;
         max-width: 120px;
     }
@@ -545,6 +608,10 @@
         font-size: 2.5rem;
     }
 
+    .appsImage {
+        width: 120px;
+    }
+
     .carouselContainer {
         width: 350px;
         /* Aumentar para acomodar imágenes más grandes */
@@ -555,11 +622,17 @@
     .projectItem {
         width: 105px;
         /* 60px * 1.75 = 105px */
-        margin-left: -52.5px; /* Only center horizontally */
-    }    .projectImage {
-        height: 105px; /* Fixed uniform height for small mobile thumbnails */
+        margin-left: -52.5px;
+        /* Only center horizontally */
+    }
+
+    .projectImage {
+        height: 105px;
+        /* Fixed uniform height for small mobile thumbnails */
         margin-bottom: 5px;
-    }.projectMiniTitle {
+    }
+
+    .projectMiniTitle {
         font-size: 0.6rem;
         max-width: 90px;
     }
@@ -612,6 +685,12 @@
     padding-right: 10px;
 }
 
+.wellnessScroll img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .wellnessScroll::-webkit-scrollbar {
     width: 6px;
 }
@@ -641,8 +720,13 @@
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .loadingSpinner {

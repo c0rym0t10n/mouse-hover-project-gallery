@@ -48,7 +48,8 @@ foreach ($file in $allFiles) {
     elseif ($fileName -like "*original*" -and $file.Extension -eq ".webp") {
         if ($renamedCount % 3 -eq 0) {
             $newName = "humo-santo_0$(($renamedCount / 3) + 1)$($file.Extension)"
-        } else {
+        }
+        else {
             $newName = "verbena_0$(($renamedCount % 3) + 1)$($file.Extension)"
         }
     }

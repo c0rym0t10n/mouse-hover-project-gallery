@@ -19,14 +19,11 @@ const webProjects = [
         color: "#FF6B35",
         type: "image",
         ratio: "square"
-    },
-    {
-        id: 2,
-        title: "Wellness App",
-        description: "Desarrollé una red social interna para un cliente, centrada en el bienestar. La app incluía contenido exclusivo y retos semanales para los usuarios. También diseñé el splash screen y la pantalla de inicio de sesión, partiendo desde Figma hasta su implementación final.",
-        tags: ["HTML", "app", "webapp", "UX/UI", "figma"],
-        image: "/projects-web/wellnes app/original-f3fa8e9597333e6e52060a4a0abc90ab.webp",
+    }, {
+        id: 2, title: "Wellness App",
+        description: "Desarrollé una red social interna para un cliente, centrada en el bienestar. La app incluía contenido exclusivo y retos semanales para los usuarios. También diseñé el splash screen y la pantalla de inicio de sesión, partiendo desde Figma hasta su implementación final.", tags: ["HTML", "app", "webapp", "UX/UI", "figma"], image: "/projects-web/wellnes.svg",
         images: [
+            "/projects-web/wellnes.svg",
             "/projects-web/wellnes app/original-f3fa8e9597333e6e52060a4a0abc90ab.webp",
             "/projects-web/wellnes app/original-8bb9966db6894f8d490af014ed21f15b.mp4",
             "/projects-web/wellnes app/original-d809ba5be7118696efa0d7b09983e866.webp"
@@ -67,8 +64,7 @@ const webProjects = [
         color: "#EF4444",
         type: "video",
         ratio: "landscape"
-    },
-    {
+    }, {
         id: 6,
         title: "Crocs Out-of-Home VFX",
         description: "Desarrollé una serie de piezas animadas estilo CGI Ad, integrando productos de Crocs en espacios públicos populares mediante composición 3D y motion tracking. Inspiradas en la tendencia de product drops digitales.",
@@ -80,60 +76,36 @@ const webProjects = [
         ],
         color: "#10B981",
         type: "video",
-        ratio: "landscape"
-    },
-    {
-        id: 7,
-        title: "Hope",
-        description: "Proyecto personal de exploración visual centrado en el desarrollo de branding y splash screen para una app conceptual llamada Hope. El diseño fue realizado íntegramente en Figma, enfocándome en transmitir calma, claridad y propósito.",
-        tags: ["figma", "branding", "UI", "splash", "concept design"],
-        image: "/projects-web/hope/original-5b06b9cc979f3b58f83b7f729de540b9.mp4",
-        images: ["/projects-web/hope/original-5b06b9cc979f3b58f83b7f729de540b9.mp4"],
+        ratio: "vertical"
+    }, {
+        id: 7, title: "Hope",
+        description: "Proyecto personal de exploración visual centrado en el desarrollo de branding y splash screen para una app conceptual llamada Hope. El diseño fue realizado íntegramente en Figma, enfocándome en transmitir calma, claridad y propósito.", tags: ["figma", "branding", "UI", "splash", "concept design"], image: "/projects-web/hope.svg",
+        images: [
+            "/projects-web/hope.svg",
+            "/projects-web/hope/original-5b06b9cc979f3b58f83b7f729de540b9.mp4"
+        ],
         color: "#6366F1",
-        type: "video",
+        type: "mixed",
         ratio: "portrait"
     },    {
         id: 8,
         title: "Blender VFX",
         description: "Efectos especiales y animaciones 3D creados en Blender. Incluye simulaciones de granadas, explosiones y efectos de partículas con técnicas avanzadas de motion graphics y VFX.",
         tags: ["blender", "VFX", "motion graphics", "3D", "explosions", "particles"],
-        image: "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_A3LYyYhJ1HLUCNHf-grenade.mp4",
+        image: "/projects-web/blender/01.mp4",
         images: [
-            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_A3LYyYhJ1HLUCNHf-grenade.mp4",
-            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_rVa64FA3seWCGFTw-pre%202.mp4",
-            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_1pV9kqB4C04xGH4i-cardboard.mp4"
+            "/projects-web/blender/01.mp4",
+            "/projects-web/blender/02.mp4",
+            "/projects-web/blender/03.mp4",
+            "/projects-web/blender/04.mp4",
+            "/projects-web/blender/05.mp4",
+            "/projects-web/blender/06.mp4",
+            "/projects-web/blender/A.jpg",
+            "/projects-web/blender/B.jpg"
         ],
         color: "#F97316",
-        type: "video",
-        ratio: "landscape"
-    },
-    {
-        id: 9,
-        title: "3D Product Design",
-        description: "Visualizaciones de productos 3D y estudios de composición digital. Proyectos que combinan modelado, iluminación y rendering para crear imágenes impactantes de productos conceptuales.",
-        tags: ["blender", "product design", "3D", "rendering", "visualization"],
-        image: "/projects-web/blender/Vs0sAF39LXIfYXyc-jynx_bomb.jpg",
-        images: [
-            "/projects-web/blender/Vs0sAF39LXIfYXyc-jynx_bomb.jpg",
-            "/projects-web/blender/oLuOFtW4FOQQRSuS-bomb.jpg"
-        ],
-        color: "#DC2626",
-        type: "image",
+        type: "mixed",
         ratio: "square"
-    },
-    {
-        id: 10,
-        title: "Motion Graphics Lab",
-        description: "Laboratorio de motion graphics donde experimento con animaciones, transiciones y efectos visuales. Incluye trabajos de composición y post-producción usando técnicas mixtas.",
-        tags: ["motion graphics", "compositing", "after effects", "blender", "experimental"],
-        image: "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_BvaaXL2AHtJQ2Tjk-pc_low.mp4",
-        images: [
-            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_BvaaXL2AHtJQ2Tjk-pc_low.mp4",
-            "/projects-web/blender/users_clr8cq4c2073oor01t4h4fgh8_dOIaYxIKVjJpJfDq-loreal02.mp4"
-        ],
-        color: "#7C3AED",
-        type: "video",
-        ratio: "landscape"
     }
 ];
 
@@ -195,8 +167,10 @@ export default function WebPage() {
                     &larr; Back
                 </Link>
             </div>            <div className={styles.title}>
-                <h1>.web</h1>
-                <p>--motion --webdev --3D --IA</p>
+                <h1>.web</h1>                <p>--motion --webdev --3D --IA</p>                <div className={styles.appsImageContainer}>
+                    <img src="/projects-web/apps.png" alt="Apps" className={styles.appsImage} />
+                </div>
+                <div className={styles.appsBackground}></div>
             </div>
 
             <div className={styles.carouselContainer}>        <div className={styles.carousel}>                {webProjects.map((project, index) => {
@@ -222,7 +196,7 @@ export default function WebPage() {
                 // Debug: mostrar valores en consola
                 if (index === 0) {
                     console.log('Rotation:', rotation, 'Angle:', currentAngle, 'X:', x, 'Y:', y);
-                }                return (
+                } return (
                     <div
                         key={project.id}
                         className={styles.projectItem}
@@ -233,12 +207,12 @@ export default function WebPage() {
                         onClick={() => handleProjectClick(project)}
                     ><div className={styles.projectImage}>
                             {project.image.endsWith('.mp4') || project.image.endsWith('.m4v') ? (
-                                <video 
-                                    src={project.image} 
+                                <video
+                                    src={project.image}
                                     alt={project.title}
-                                    autoPlay 
-                                    loop 
-                                    muted 
+                                    autoPlay
+                                    loop
+                                    muted
                                     playsInline
                                 />
                             ) : (
@@ -249,8 +223,8 @@ export default function WebPage() {
                             <h3 className={styles.projectMiniTitle}>{project.title}</h3>
                             <div className={styles.projectMiniTags}>
                                 {project.tags.slice(0, 2).map((tag, tagIndex) => (
-                                    <span 
-                                        key={tagIndex} 
+                                    <span
+                                        key={tagIndex}
                                         className={styles.miniTag}
                                         style={{ backgroundColor: project.color }}
                                     >
@@ -275,58 +249,60 @@ export default function WebPage() {
                             ×
                         </button>
                         <div className={styles.projectCard}>                            <div className={`${styles.projectImageLarge} ${styles[`modal-${selectedProject.ratio}`]}`}>
-                                <div className={`${styles.carouselWrapper} ${selectedProject.title === "Wellness App" ? styles.wellnessScroll : ""}`}>
-                                    {selectedProject.images[currentImageIndex].endsWith('.mp4') || 
-                                     selectedProject.images[currentImageIndex].endsWith('.m4v') ? (
-                                        <video
-                                            src={selectedProject.images[currentImageIndex]}
-                                            alt={`${selectedProject.title} - Video ${currentImageIndex + 1}`}
-                                            autoPlay 
-                                            loop 
-                                            muted 
-                                            playsInline
-                                            controls={selectedProject.title === "Wellness App"}
-                                            style={{
-                                                width: '100%',
-                                                height: '100%',
-                                                objectFit: 'cover'
-                                            }}
-                                        />
-                                    ) : (
-                                        <img
-                                            src={selectedProject.images[currentImageIndex]}
-                                            alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
-                                        />
-                                    )}
+                            <div className={`${styles.carouselWrapper} ${
+                                selectedProject.title === "Wellness App" && 
+                                selectedProject.images[currentImageIndex].endsWith('.webp') 
+                                    ? styles.wellnessScroll : ""
+                            }`}>                                {selectedProject.images[currentImageIndex].endsWith('.mp4') ||
+                                    selectedProject.images[currentImageIndex].endsWith('.m4v') ? (
+                                    <video
+                                        src={selectedProject.images[currentImageIndex]}
+                                        alt={`${selectedProject.title} - Video ${currentImageIndex + 1}`}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        controls={selectedProject.title === "Wellness App"}                                        style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            objectFit: 'contain'
+                                        }}
+                                    />
+                                ) : (
+                                    <img
+                                        src={selectedProject.images[currentImageIndex]}
+                                        alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
+                                    />
+                                )}
 
-                                    {selectedProject.images.length > 1 && (
-                                        <>
-                                            <button
-                                                className={`${styles.carouselButton} ${styles.prevButton}`}
-                                                onClick={prevImage}
-                                            >
-                                                &#8249;
-                                            </button>
-                                            <button
-                                                className={`${styles.carouselButton} ${styles.nextButton}`}
-                                                onClick={nextImage}
-                                            >
-                                                &#8250;
-                                            </button>
+                                {selectedProject.images.length > 1 && (
+                                    <>
+                                        <button
+                                            className={`${styles.carouselButton} ${styles.prevButton}`}
+                                            onClick={prevImage}
+                                        >
+                                            &#8249;
+                                        </button>
+                                        <button
+                                            className={`${styles.carouselButton} ${styles.nextButton}`}
+                                            onClick={nextImage}
+                                        >
+                                            &#8250;
+                                        </button>
 
-                                            <div className={styles.carouselDots}>
-                                                {selectedProject.images.map((_, index) => (
-                                                    <button
-                                                        key={index}
-                                                        className={`${styles.dot} ${index === currentImageIndex ? styles.activeDot : ''}`}
-                                                        onClick={() => goToImage(index)}
-                                                    />
-                                                ))}
-                                            </div>
-                                        </>
-                                    )}
-                                </div>
+                                        <div className={styles.carouselDots}>
+                                            {selectedProject.images.map((_, index) => (
+                                                <button
+                                                    key={index}
+                                                    className={`${styles.dot} ${index === currentImageIndex ? styles.activeDot : ''}`}
+                                                    onClick={() => goToImage(index)}
+                                                />
+                                            ))}
+                                        </div>
+                                    </>
+                                )}
                             </div>
+                        </div>
                             <div className={styles.projectInfo}>
                                 <h2>{selectedProject.title}</h2>
                                 <p className={styles.projectDescription}>{selectedProject.description}</p>
