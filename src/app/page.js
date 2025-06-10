@@ -18,7 +18,7 @@ const projects = [{
 }, {
   title: "cv--",
   description: "Download CV",
-  src: "cv.png",
+  src: "profile.png",
   color: "#FF1E8D"
 }, {
   title: ".contact",

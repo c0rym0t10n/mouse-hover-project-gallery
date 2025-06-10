@@ -250,8 +250,8 @@ export default function WebPage() {
                         </button>
                         <div className={styles.projectCard}>                            <div className={`${styles.projectImageLarge} ${styles[`modal-${selectedProject.ratio}`]}`}>
                             <div className={`${styles.carouselWrapper} ${selectedProject.title === "Wellness App" &&
-                                    selectedProject.images[currentImageIndex].endsWith('.webp')
-                                    ? styles.wellnessScroll : ""
+                                selectedProject.images[currentImageIndex].endsWith('.webp')
+                                ? styles.wellnessScroll : ""
                                 }`}>                                {selectedProject.images[currentImageIndex].endsWith('.mp4') ||
                                     selectedProject.images[currentImageIndex].endsWith('.m4v') ? (
                                     <video

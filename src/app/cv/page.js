@@ -11,16 +11,15 @@ export default function CVPage() {
         </div>
 
             <div className={styles.content}>
-                <header className={styles.header}>
-                    <div className={styles.profileSection}>
-                        <div className={styles.avatar}>
-                            <img src="/images/portrait.jpg" alt="Profile" />
-                        </div>                        <div className={styles.headerInfo}>
-                            <h1 className={styles.name}>corymotion</h1>
-                            <p className={styles.title}>Motion Designer in México, He/him</p>
-                            <p className={styles.availability}>Like totally avaibs for work, or jobs or cool projects!</p>
-                        </div>
+                <header className={styles.header}>                    <div className={styles.profileSection}>
+                    <div className={styles.avatar}>
+                        <img src="/images/cv.png" alt="Profile" />
+                    </div>                        <div className={styles.headerInfo}>
+                        <h1 className={styles.name}>corymotion</h1>
+                        <p className={styles.title}>Motion Designer in México, He/him</p>
+                        <p className={styles.availability}>Like totally avaibs for work, or jobs or cool projects!</p>
                     </div>
+                </div>
                     <div className={styles.downloadSection}>
                         <a href="/cv-corymotion.pdf" download="CV-CoryMotion.pdf" className={styles.downloadButton}>
                             <span>📄</span> Download PDF
